@@ -12,24 +12,6 @@
         font-family: 'Poppins', sans-serif;
       }
 
-      .nav-link {
-        @apply relative text-white text-lg font-medium transition duration-300;
-      }
-
-      .nav-link::after {
-        content: "";
-        @apply absolute left-0 bottom-[-4px] w-0 h-[2px] bg-yellow-500 transition-all duration-300;
-      }
-
-      .nav-link:hover::after,
-      .nav-link.active::after {
-        @apply w-full;
-      }
-
-      .nav-link.active {
-        @apply text-yellow-400;
-      }
-
       .justify-list li {
         text-align: justify;
       }
@@ -44,7 +26,7 @@
 
 <body class="overflow-x-hidden">
     <nav class="bg-black text-white fixed w-full h-20 top-0 left-0 right-0 z-50">
-    <div class="container mx-auto flex items-center justify-between px-6 py-6">
+    <div class="container mx-auto flex items-center justify-between px-32 py-6">
       <a href="tailwind.html" class="text-2xl font-sans font-extrabold">Shivani Shrungare</a>
       
       <button id="menu-toggle" class="md:hidden focus:outline-none">
@@ -78,7 +60,7 @@
     <div class="w-full h-full flex items-center justify-center">
       <div class="relative w-full flex flex-col md:flex-row items-center justify-between container mx-auto px-6">
   
-        <div class="w-full flex-col px-8 py-6 justify-center space-y-4">
+        <div class="w-full flex-col px-32 py-6 justify-center space-y-4">
           <span class="text-xl text-yellow-400 font-semibold uppercase">Hello!</span>
           <h1 class="text-7xl md:text-6xl font-extrabold">
             I'm <span class="text-yellow-500">Shivani Shrungare</span>
@@ -98,7 +80,7 @@
   </section>
 
 
-  <section id="about-section" class="bg-black text-white px-28 py-6">
+  <section id="about-section" class="bg-black text-white px-32 py-6">
     <div class="container mx-auto px-6">
         <div class="flex flex-wrap items-center">
             <div class="w-full lg:w-5/12 flex flex-col items-center lg:items-start">
@@ -153,19 +135,17 @@
                 </h2>
             </div>
             
-                <p class="mt-4 text-gray-400">With over 5 years of experience in data science & analytics, possessing a bachelor's degree in engineering. Skilled in data analysis, statistical analysis, hypothesis testing, customer behavior analysis, and machine learning. Proven success in leading impactful projects and mentoring teams.</p>
+                <p class="mt-4 text-gray-400 text-justify">Experienced Software Developer with a strong foundation in frontend development, UI/UX design, and Agile methodologies. Passionate about creating seamless, user-centric applications using React, JavaScript, and TypeScript. Adept at optimizing interfaces, enhancing accessibility, and collaborating across teams to drive impactful solutions. A proactive problem-solver with a keen eye for detail and a commitment to continuous learning and innovation</p>
                 
                 <ul class="mt-6 space-y-2">
-                    <li><span class="font-semibold text-yellow-400">Profile:</span> Data Science & Analytics</li>
-                    <li><span class="font-semibold text-yellow-400">Domain:</span> Retail, Ecommerce, BFSI & Digital Marketing</li>
-                    <li><span class="font-semibold text-yellow-400">Education:</span> Bachelor of Engineering</li>
-                    <li><span class="font-semibold text-yellow-400">Language:</span> English, Hindi</li>
-                    <li><span class="font-semibold text-yellow-400">BI Tools:</span> Microsoft Power BI, Looker & Tableau</li>
-                    <li><span class="font-semibold text-yellow-400">Other Skills:</span> Cloud, PySpark, Excel, Git, JIRA, Google Analytics & SEO</li>
-                    <li><span class="font-semibold text-yellow-400">Interest:</span> Traveling, Travel Photography, Teaching</li>
+                    <li><span class="font-semibold text-yellow-400">Profile:</span> UI/UX Design and Frontend Development</li>
+                    <li><span class="font-semibold text-yellow-400">Education:</span> Master in Applied Computer Science</li>
+                    <li><span class="font-semibold text-yellow-400">Language:</span> English, German</li>
+                    <li><span class="font-semibold text-yellow-400">Tools:</span> Figma, Git, Jira, Bitbucket, Jenkins</li>
+                    <li><span class="font-semibold text-yellow-400">Skills:</span> React, JavaScript, HTML5, CSS3, TypeScript</li>
+                    <li><span class="font-semibold text-yellow-400">Interest:</span> Designing, Sketching, Coding, Learning new things</li>
                 </ul>
                 
-                <p class="mt-6 text-lg font-bold text-yellow-400">30+ Projects Completed</p>
             </div>
         </div>
     </div>
@@ -179,14 +159,14 @@
                   Resume
               </h2>
      
-          <p class="mt-4 text-l text-gray-400 max-w-4xl mx-auto text-center mb-6">
+          <p class="mt-4 text-lg text-gray-400 max-w-6xl mx-auto text-center mb-6 text-yellow-500">
            Computer Science graduate with 2 years experience in frontend development and UI/UX design. Passionate about building user-focused applications and solving
             complex problems. Skilled in React & JavaScript with expertise in Agile development.
           </p>
    
 
       <div class="mb-8">
-          <h1 class="text-5xl font-semibold text-white text-center mb-4">Experience</h1>
+          <h1 class="text-5xl font-semibold text-white text-center mb-8">Experience</h1>
           <div class="w-full h-1 bg-yellow-500 mt-2"></div>
       </div>
 
@@ -222,7 +202,7 @@
       </div>
 
       <div class="mt-12">
-          <h1 class="text-5xl font-semibold text-white text-center">Education</h1>
+          <h1 class="text-5xl font-semibold text-white text-center mb-8">Education</h1>
           <div class="w-full h-1 bg-yellow-500 mt-2"></div>
       </div>
 
@@ -250,80 +230,53 @@
 </section>
 
 
-<section id="project-section" class="py-16 bg-black text-white">
+<section id="project-section" class="px-32 py-10 bg-black text-white">
   <div class="container mx-auto px-6">
     <div class="text-center mb-12">
-      <h1 class="text-6xl font-bold text-gray-800 opacity-10 absolute w-full">Projects</h1>
-      <h2 class="text-3xl font-semibold relative text-white">Projects</h2>
-      <p class="text-gray-300 mt-4">Below are sample Data Analytics projects on SQL, Python, Power BI & ML.</p>
+      <h1 class="text-5xl font-semibold text-white text-center mb-8">Projects</h1>
+      <p class="text-yellow-500 text-xl mt-4">View the work demo by clicking on the image and access the source code by clicking on the project name</p>
     </div>
 
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
  
       <div class="bg-gray-900 p-4 rounded-lg shadow-lg">
-        <a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql">
-          <div class="h-52 bg-cover bg-center rounded-lg" style="background-image: url('images/proj_1.jpg');"></div>
+        <a href="https://view.genially.com/66eac26f8d1e517a3935dbf1/presentation-basic-shapes-presentation" target="_blank">
+          <img src="images/project-1.png" class="w-auto h-auto">
         </a>
         <h3 class="mt-4 text-lg font-semibold text-yellow-400">
-          <a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql">Digital Music Store Data Analysis using SQL</a>
+          <a href="https://github.com/shivanishrungare/Lecture-Management-App" target="_blank">Lecture Planning and Management Application</a>
         </h3>
-        <p class="text-gray-400 mt-2">Analyzed music store data using advanced SQL queries to identify gaps and increase business growth.</p>
+        <p class="text-gray-400 text-justify mt-2">Developed an application which solves the challenges in Excel-based lecture planning method and offers real-time updates, conflict detection, and streamlined collaboration, based on MERN stack</p>
       </div>
 
 
       <div class="bg-gray-900 p-4 rounded-lg shadow-lg">
-        <a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb">
-          <div class="h-52 bg-cover bg-center rounded-lg" style="background-image: url('images/proj_2.jpg');"></div>
+        <a href="https://view.genially.com/67c9f302d9be386ee83dd0e6/presentation-mental-health-app" target="_blank">
+          <img src="images/project-2.png" class="w-auto h-auto">
         </a>
         <h3 class="mt-4 text-lg font-semibold text-yellow-400">
-          <a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb">Data Analysis using Python Project for Beginners</a>
+          <a href="https://github.com/shivanishrungare/MentalHealthApp" target="_blank">Mental Health Application</a>
         </h3>
-        <p class="text-gray-400 mt-2">Performed exploratory data analysis on Diwali sales data to improve customer experience.</p>
+        <p class="text-gray-400 text-justify  mt-2">Developed an application which offers a visually appealing interface that aims to provide support, guidance, and a sense of calm for user's mental health, main focus on design based on UX laws. </p>
       </div>
 
 
       <div class="bg-gray-900 p-4 rounded-lg shadow-lg">
-        <a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg">
-          <div class="h-52 bg-cover bg-center rounded-lg" style="background-image: url('images/proj_3.jpg');"></div>
+        <a href="https://view.genially.com/67ca199b2cb7174b6fe25885/presentation-travel-goat" target="_blank">
+          <img src="images/project-3.png" class="w-auto h-auto">
         </a>
         <h3 class="mt-4 text-lg font-semibold text-yellow-400">
-          <a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg">Power BI Sales Dashboard</a>
+          <a href="https://github.com/bajajshubham/travel-agency-website" target="_blank">Travel Angency Website</a>
         </h3>
-        <p class="text-gray-400 mt-2">Designed a Power BI dashboard for Madhav Store to track and analyze online sales data.</p>
+        <p class="text-gray-400 mt-2">Developed an application which offers an interface that aims to provide support to students and colour blind people for travels, main focus on Usability and unit testing</p>
       </div>
     </div>
-
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
-    
-      <div class="bg-gray-900 p-4 rounded-lg shadow-lg">
-        <a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main">
-          <div class="h-52 bg-cover bg-center rounded-lg" style="background-image: url('images/proj_4.jpg');"></div>
-        </a>
-        <h3 class="mt-4 text-lg font-semibold text-yellow-400">
-          <a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main">Sales Forecast - Time Series Analysis</a>
-        </h3>
-        <p class="text-gray-400 mt-2">Used multiple ML models to forecast sales and performed time series analysis.</p>
-      </div>
-
-
-      <div class="bg-gray-900 p-4 rounded-lg shadow-lg">
-        <a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb">
-          <div class="h-52 bg-cover bg-center rounded-lg" style="background-image: url('images/proj_5.jpg');"></div>
-        </a>
-        <h3 class="mt-4 text-lg font-semibold text-yellow-400">
-          <a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb">Customer Segmentation using Clustering</a>
-        </h3>
-        <p class="text-gray-400 mt-2">Developed an ML model for customer segmentation in financial products.</p>
-      </div>
-    </div>
-  </div>
 </section>
 
 
 
-<section class="py-16 bg-cover bg-center text-center text-white" style="background-image: url('images/bg-4.jpg');">
+<section class="py-20 bg-cover bg-center text-center text-white" style="background-image: url('images/bg-4.jpg');">
   <h2 class="text-4xl text-black font-semibold">Projects on <span class="text-yellow-500 font-bold">GitHub</span></h2>
   <p class="text-gray-600 text-xl mt-4">I love solving problems & learning new technologies</p>
   <a href="https://github.com/shivanishrungare" target="_blank" class="mt-6 inline-block bg-yellow-400 text-black py-3 px-6 rounded-lg text-lg font-semibold hover:bg-yellow-500 transition">
@@ -332,11 +285,11 @@
 </section>
 
 <section class="bg-black py-16" id="contact-section">
-  <div class="container mx-auto px-4">
+  <div class="container mx-auto px-32">
     <div class="row justify-center mb-12">
       <div class="col-md-7 text-center animate__animated animate__fadeIn">
         <h1 class="text-4xl mb-2 font-bold text-white">Contact</h1>
-        <p class="text-gray-400">Below are the details to reach out to me!</p>
+        <p class="text-yellow-500 text-xl">Below are the details to reach out to me!</p>
       </div>
     </div>
 
