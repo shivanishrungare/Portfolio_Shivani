@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Shivani Shrungare Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
+
+      .justify-list li {
+        text-align: justify;
+      }
+
+      html {
+          scroll-behavior: smooth;
+      }
+    </style>
+</head>
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+
+<body class="overflow-hidden">
+  <nav class="bg-black text-white fixed w-full h-20 top-0 left-0 right-0 z-50">
+    <div class="container mx-auto flex items-center justify-between px-6 md:px-32 py-6">
+      <a href="tailwind.html" class="text-2xl font-sans font-extrabold">Shivani Sanjay Shrungare</a>
+      <button id="menu-toggle" class="md:hidden focus:outline-none">
+        <span class="text-2xl">&#9776;</span>
+      </button>
+      <ul id="menu" class="hidden md:flex space-x-6 text-l px-6">
+        <li><a href="#home-section" class="nav-link hover:text-yellow-400">Home</a></li>
+        <li><a href="#about-section" class="nav-link hover:text-yellow-400">About</a></li>
+        <li><a href="#resume-section" class="nav-link hover:text-yellow-400">Resume</a></li>
+        <li><a href="#project-section" class="nav-link hover:text-yellow-400">Projects</a></li>
+        <li><a href="#contact-section" class="nav-link hover:text-yellow-400">Contact</a></li>
+      </ul>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-800 text-white">
+      <ul class="text-center p-4 space-y-4">
+        <li><a href="#home-section" class="block hover:text-yellow-400">Home</a></li>
+        <li><a href="#about-section" class="block hover:text-yellow-400">About</a></li>
+        <li><a href="#resume-section" class="block hover:text-yellow-400">Resume</a></li>
+        <li><a href="#project-section" class="block hover:text-yellow-400">Projects</a></li>
+        <li><a href="#contact-section" class="block hover:text-yellow-400">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="home-section" class="relative w-full h-screen flex items-center justify-center bg-black text-white pt-20">
+    <div class="w-full h-full flex flex-col md:flex-row items-center justify-between container mx-auto px-6 md:px-32">
+      <div class="w-full flex-col py-6 space-y-4 text-center md:text-left">
+        <span class="text-xl text-yellow-400 font-semibold uppercase">Hello!</span>
+        <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold">
+          I'm <span class="text-yellow-500">Shivani Shrungare</span>
+        </h1>
+        <h2 class="text-xl md:text-2xl font-bold">Frontend Enthusiast | UI/UX Designer</h2>
+        <p class="text-lg md:text-2xl text-yellow-500">Computer Science Graduate</p>
+        <p class="text-lg md:text-xl"> Frontend development, Usability Engineering and UX Design</p>
+      </div>
+      <div class="w-full flex justify-center">
+        <img src="images/bg_1.png" alt="Shivani Shrungare" class="w-auto max-h-[50vh] md:max-h-[70vh] object-contain">
+      </div>
+    </div>
+  </section>
+
+  <section id="about-section" class="bg-black text-white px-32 py-6">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-wrap items-center">
+            <div class="w-full lg:w-5/12 flex flex-col items-center lg:items-start">
+              <div class="container mx-auto flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-10 px-6">
+          
+                <div class="w-40 h-40 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-white flex-shrink-0">
+                    <img src="images/bg-2.jpg" alt="Profile" class="w-full h-full object-cover">
+                </div>
+        
+            
+                <div class="text-left">
+                  <p class="text-lg text-gray-400 mb-4"><span class="text-gray-400">Name:</span> Shivani Shrungare</p>
+                  <p class="text-lg  text-gray-400 mb-4"><span class="text-gray-400">Education:</span> Computer Science Graduate</p>
+                  <p class="text-lg  text-gray-400 mb-4"><span class="text-gray-400">Experience:</span> 4 Years 5 months</p>
+                  <p class="text-lg  text-gray-400 mb-4"><span class="text-gray-400">Location:</span> Heidelberg, Germany</p>
+                </div>
+                </div>
+                
+      
+                <div class="mt-6 w-full">
+                    <p class="text-xl font-semibold">Skills</p>
+                    <div class="mt-2">
+                        <p class="text-sm">React <span class="float-right">90%</span></p>
+                        <div class="w-full bg-gray-800 rounded-full h-2.5">
+                            <div class="bg-yellow-400 h-2.5 rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <p class="text-sm">JavaScript <span class="float-right">80%</span></p>
+                        <div class="w-full bg-gray-800 rounded-full h-2.5">
+                            <div class="bg-yellow-400 h-2.5 rounded-full" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <p class="text-sm">HTML and CSS<span class="float-right">90%</span></p>
+                        <div class="w-full bg-gray-800 rounded-full h-2.5">
+                            <div class="bg-yellow-400 h-2.5 rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+                     <div class="mt-2">
+                        <p class="text-sm">Figma Prototyping<span class="float-right">90%</span></p>
+                        <div class="w-full bg-gray-800 rounded-full h-2.5">
+                            <div class="bg-yellow-400 h-2.5 rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="w-full lg:w-7/12 mt-10 lg:mt-0 lg:pl-12">
+              <div class="relative w-full">
+     
+                <h1 class="text-8xl font-extrabold text-white-800 opacity-10 absolute top-0 left-0">
+                    About
+                </h1>
+          
+                <h2 class="text-5xl font-bold text-white relative z-10 mb-8">
+                    About Me
+                </h2>
+            </div>
+            
+                <p class="mt-4 text-gray-400 text-justify">Experienced developer with a strong foundation in frontend development, UI/UX design, and Agile methodologies. Passionate about creating seamless, user-centric applications using React, JavaScript, and TypeScript. Adept at optimizing interfaces, enhancing accessibility, and collaborating across teams to drive impactful solutions. A proactive problem-solver with a keen eye for detail and a commitment to continuous learning and innovation</p>
+                
+                <ul class="mt-6 space-y-2">
+                    <li><span class="font-semibold text-yellow-400">Profile:</span> UI/UX Design and Frontend Development</li>
+                    <li><span class="font-semibold text-yellow-400">Education:</span> Master in Applied Computer Science</li>
+                    <li><span class="font-semibold text-yellow-400">Language:</span> English, German</li>
+                    <li><span class="font-semibold text-yellow-400">Tools:</span> Figma, Git, Jira, Bitbucket, Jenkins</li>
+                    <li><span class="font-semibold text-yellow-400">Skills:</span> React, JavaScript, TypeScript, HTML5, CSS3, Tailwind CSS, Material UI </li>
+                    <li><span class="font-semibold text-yellow-400">Interest:</span> Designing, Sketching, Coding, Learning new things</li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+<section id="resume-section" class="px-32 py-10 bg-black">
+  <div class="container mx-auto px-4">
+    
+              <h2 class="text-5xl text-center font-bold text-white relative mb-8">
+                  Resume
+              </h2>
+     
+          <p class="mt-4 text-lg text-gray-400 max-w-6xl mx-auto text-center mb-6 text-yellow-500">
+           Frontend Developer with 3+ years of experience designing and developing scalable, accessible, and high-performance web applications.
+            Strong background in UI/UX design, responsive web development with Tailwind CSS, and frontend optimization.
+            Proficient in HTML, CSS, JavaScript, TypeScript, Vue.js, and React. Creative team player with a
+            passion for intuitive design and modern web technologies.
+
+          </p>
+   
+
+      <div class="mb-8">
+          <h1 class="text-5xl font-semibold text-white text-center mb-8">Experience</h1>
+          <div class="w-full h-1 bg-yellow-500 mt-2"></div>
+      </div>
+     <div class="grid md:grid-cols-1 gap-8">
+          <div class="bg-stone-800 p-6 rounded-lg shadow-md">
+              <span class="text-yellow-500 font-semibold">April 2025 – Present</span>
+              <h2 class="text-xl text-white font-bold mt-2">Freelance Frontend Developer</h2>
+              <span class="text-gray-400">Marathi Referrals</span>
+              <p class="mt-4 text-gray-400">Marathi Referrals is a Community Web Platform to help the people in the community for job referrals, career guidance and mentorship.</p>
+              <ul class="mt-4 text-gray-400 list-disc list-outside pl-5 space-y-2 justify-list">
+               <li>Developed and improved UI features using React and JavaScript, fixing bugs and enhancing responsiveness.</li>
+               <li>Integrated frontend components with backend APIs (Node.js), supporting new feature rollouts and platform stability.</li>
+            </ul>
+            
+          </div>
+          <div class="bg-stone-800 p-6 rounded-lg shadow-md">
+              <span class="text-yellow-500 font-semibold">May 2023 - Sept 2024</span>
+              <h2 class="text-xl text-white font-bold mt-2">Work Student Software Developer</h2>
+              <span class="text-gray-400">TeamViewer GmbH</span>
+              <p class="mt-4 text-gray-400">TeamViewer, a leading global technology company that provides a connectivity platform to remotely access, control, manage, monitor, and repair devices.</p>
+              <ul class="mt-4 text-gray-400 list-disc list-outside pl-5 space-y-2 justify-list">
+                <li>Accomplished a 35% increase in design accuracy by developing 15+ responsive and reusable UI components using React and TypeScript.</li>
+                <li>Reduced design inconsistencies by 35% and improved developer handoff time by integrating Figma design tokens into production code.</li>
+                <li>Implemented and achieved a 30% bug reduction and a 40% performance boost by refactoring a legacy codebase.</li>
+                <li>Decreased design feedback loops by 40% by documenting UI components and promoting design system consistency.</li>
+                <li>Achieved an 80% sprint completion rate by optimizing Agile development workflows and CI/CD pipeline efficiency.</li>
+                <li>Optimized performance and scalability of frontend components by implementing efficient data structures and algorithms for state management and search filters</li>
+            </ul>
+            
+          </div>
+
+          <div class="bg-stone-800 p-6 rounded-lg shadow-md">
+              <span class="text-yellow-500 font-semibold">Jul 2019 - Aug 2022</span>
+              <h2 class="text-xl text-white font-bold mt-2">Frontend Developer</h2>
+              <span class="text-gray-400">Tata Consultancy Services Ltd</span>
+              <p class="mt-4 text-gray-400">Tata Consultancy Services is an Indian multinational technology company specializing in information technology services and consulting.</p>
+              <ul class="mt-4 text-gray-400 list-disc list-outside pl-5 space-y-2 justify-list">
+                <li>Gained deep insight into system behaviour and user pain points by starting as an L3 Developer managing production incidents, releases, and backend enhancements.</li>
+                <li>Initiated a transition into the frontend team by proactively identifying critical UI/UX flaws and broken flows in a banking application used by 1 M+ users.</li>
+                <li>Reduced user complaints by 30% and improved task completion rates by collaborating with UI/UX designers and business stakeholders to redesign legacy interfaces.</li>
+                <li>Improved user engagement by 25% by building and modernizing responsive UI components using React, Angular, HTML, and CSS.</li>
+                <li>Increased UI reliability and reduced related incident tickets by 40% by resolving long-standing frontend bugs and inconsistencies.</li>
+                <li>Maintained 99.9% uptime across releases by ensuring frontend changes were fully tested and seamlessly integrated with backend systems during cross-functional deployments </li>
+            </ul>
+          </div>
+      </div>
+
+      <div class="mt-12">
+          <h1 class="text-5xl font-semibold text-white text-center mb-8">Education</h1>
+          <div class="w-full h-1 bg-yellow-500 mt-2"></div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 mt-8">
+          <div class="bg-stone-800 p-6 rounded-lg shadow-md h-full flex flex-col justify-between">
+              <span class="text-yellow-500 font-semibold">Oct 2022 - Sept 2024</span>
+              <h2 class="text-xl text-white font-bold mt-2">Master of Science in Applied Computer Science</h2>
+              <span class="text-gray-400">SRH Hochschule Heidelberg</span>
+              <p class="mt-4 text-gray-400">Heidelberg, Germany</p>
+             
+              <div class="mt-auto pt-4"> 
+                <p class="mt-4 text-yellow-400">Relevant Coursework:</p> 
+                <p class="mt-2 text-white">Fundamentals towards UX, UX Design and Implementation, Usability Testing and Verification, Frontend and Full-Stack Development</p>
+              </div>
+          </div>
+          
+          <div class="bg-stone-800 p-6 rounded-lg shadow-md h-full flex flex-col justify-between">
+              <span class="text-yellow-500 font-semibold">June 2015 - May 2019</span>
+              <h2 class="text-xl text-white font-bold mt-2">Bachelor's in Electronics and Telecommunications</h2>
+              <span class="text-gray-400">Savitribai Phule Pune University</span>
+              <p class="mt-4 text-gray-400">Nashik, India</p>
+               <div class="mt-auto pt-4"> 
+              <p class="mt-4 text-yellow-400">Relevant Coursework:</p> 
+              <p class="mt-2 text-white">C, C++, DSA, OOP, IoT Project- Raspberry PI, Weeding robot, Chatbot using Python (Bachelor thesis)</p>
+               </div>
+          </div>
+      </div>
+
+      <div class="flex justify-center mt-12">
+          <a href="resume.pdf" download="Shivani-Shrungare-CV.pdf" target="_blank" class="bg-blue-500 text-white px-6 py-4 rounded-lg text-lg font-semibold shadow-md hover:bg-blue-600">Download CV</a>
+      </div>
+  </div>
+</section>
+
+
+<section id="project-section" class="px-32 py-10 bg-black text-white">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-12">
+      <h1 class="text-5xl font-semibold text-white text-center mb-8">Projects</h1>
+      <p class="text-yellow-500 text-xl mt-4">Click on the Github, Figma  and App overview links to dive deep into the projects</p>
+    </div>
+
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+ 
+      <div class="bg-gray-900 p-4 rounded-lg shadow-lg">
+        <div><img src="images/project-1.png" class="w-auto h-auto"></div>
+        <div><h3 class="mt-4 text-lg font-semibold text-yellow-400">Lecture Planning and Management Application</h3></div> 
+        <div><p class="text-gray-400 text-justify mt-2">Developed an application which solves the challenges in Excel-based lecture planning method and offers real-time updates, conflict detection, and streamlined collaboration, based on MERN stack</p></div>
+       <div class="mt-auto pt-4">
+          <button class="mt-4 text-lg underline font-semibold text-green-400"><a href="https://github.com/shivanishrungare/Lecture-Management-App" target="_blank">Github</a></button> |
+          <button class="mt-4 text-lg underline font-semibold text-blue-400"><a href="https://www.figma.com/design/qBw6Up4Cnt3TJ8qSL38Cfu/Lecture-Management-App?node-id=3-3&t=HzeiVnwA7aGtZj4p-0" target="_blank">Figma</a></button> |
+          <button class="mt-4 text-lg underline font-semibold text-pink-400"><a href="https://view.genially.com/66eac26f8d1e517a3935dbf1/presentation-basic-shapes-presentation" target="_blank">Overview</a></button>  
+       </div> 
+      </div>
+
+
+      <div class="bg-gray-900 p-4 rounded-lg shadow-lg h-full flex flex-col justify-between">
+        <div><img src="images/project-2.png" class="w-auto h-auto"></div>
+        <div><h3 class="mt-4 text-lg font-semibold text-yellow-400">Mental Health Application</h3></div> 
+        <div><p class="text-gray-400 text-justify  mt-2">Developed an application which offers a visually appealing interface that aims to provide support, guidance, and a sense of calm for user's mental health, main focus on design based on UX laws. </p></div>
+        <div class="mt-auto pt-4">
+          <button class="mt-4 text-lg underline font-semibold text-green-400"><a href="https://github.com/shivanishrungare/MentalHealthApp" target="_blank">Github</a></button> |
+          <button class="mt-4 text-lg underline font-semibold text-blue-400"><a href="https://www.figma.com/design/2RVUK1PWwE6hDZaCfMnOcC/UX-Figma-Design-Mental-Health-App?node-id=532-3826&p=f&t=IteqfrPEEaiqXLDI-0" target="_blank">Figma</a></button> |
+          <button class="mt-4 text-lg underline font-semibold text-pink-400"><a href="https://view.genially.com/67c9f302d9be386ee83dd0e6/presentation-mental-health-app" target="_blank">Overview</a></button>  
+       </div> 
+      </div>
+
+
+      <div class="bg-gray-900 p-4 rounded-lg shadow-lg h-full flex flex-col justify-between">
+        <div><img src="images/project-3.png" class="w-auto h-auto"></div>
+        <div><h3 class="mt-4 text-lg font-semibold text-yellow-400">Travel Agency Website</h3></div>
+        <div><p class="text-gray-400 mt-2">Developed an application which offers an interface that aims to provide support to students and colour blind people for travels, main focus on Usability and unit testing</p></div>
+         <div class="mt-auto pt-4">
+          <button class="mt-4 text-lg underline font-semibold text-green-400"><a href="https://github.com/bajajshubham/travel-agency-website" target="_blank" >Github</a></button> |
+          <button class="mt-4 text-lg underline font-semibold text-pink-400"><a href="https://view.genially.com/67ca199b2cb7174b6fe25885/presentation-travel-goat" target="_blank">Overview</a></button>  
+       </div> 
+      </div>
+
+        <div class="bg-gray-900 p-4 rounded-lg shadow-lg flex flex-col justify-between">
+        <div><img src="images/project-4.png" class="w-auto h-auto"></div>
+        <div><h3 class="mt-4 text-lg font-semibold text-yellow-400">Redesign Airbnb website-UI Design</h3></div> 
+        <div><p class="text-gray-400 text-justify mt-2">Reverse-engineered core flows to sharpen UI consistency and design accuracy.</p></div>
+       <div class="mt-auto pt-4">
+          <button class="mt-4 text-lg underline font-semibold text-blue-400"><a href="https://www.figma.com/design/R8NL45mEAbPfZroawcSJmt/Small-designs-for-Javascript?node-id=27-2&p=f&t=fEW3WSCg3hMTHTwL-0" target="_blank">Figma</a></button>
+       </div> 
+      </div>
+    </div>
+</section>
+
+
+
+<section class="py-20 bg-cover bg-center text-center text-white" style="background-image: url('images/bg-4.jpg');">
+  <h2 class="text-4xl text-black font-semibold">Projects on <span class="text-yellow-500 font-bold">GitHub</span></h2>
+  <p class="text-gray-600 text-xl mt-4">I love solving problems & learning new technologies</p>
+  <a href="https://github.com/shivanishrungare" target="_blank" class="mt-6 inline-block bg-yellow-400 text-black py-3 px-6 rounded-lg text-lg font-semibold hover:bg-yellow-500 transition">
+    View GitHub
+  </a>
+</section>
+
+<section class="bg-black py-16" id="contact-section">
+  <div class="container mx-auto px-32">
+    <div class="row justify-center mb-12">
+      <div class="col-md-7 text-center animate__animated animate__fadeIn">
+        <h1 class="text-4xl mb-2 font-bold text-white">Contact</h1>
+        <p class="text-yellow-500 text-xl">I would love to hear from you. Here’s how you can reach me!</p>
+      </div>
+    </div>
+
+    <div class="flex flex-wrap mb-12">
+      <div class="w-full md:w-1/2 lg:w-1/4 p-4 text-center animate__animated animate__fadeIn">
+        <div class="bg-black p-2 shadow-lg rounded-lg">
+          <div class="mb-4">
+            <span class="text-4xl text-gray-600 fa fa-map"></span>
+          </div>
+          <h3 class="text-xl font-semibold text-white mb-2">Address</h3>
+          <p class="text-gray-400">Heidelberg, Germany </p>
+        </div>
+      </div>
+
+      <div class="w-full md:w-1/2 lg:w-1/4 p-4 text-center animate__animated animate__fadeIn">
+        <div class="bg-black p-2 shadow-lg rounded-lg">
+          <div class="mb-4">
+            <span class="text-4xl text-gray-600 fa fa-phone"></span>
+          </div>
+          <h3 class="text-xl font-semibold text-white mb-2">Contact</h3>
+          <p><a class="text-gray-400">+49 176 850 81944</a></p>
+        </div>
+      </div>
+
+      <div class="w-full md:w-1/2 lg:w-1/4 p-4 text-center animate__animated animate__fadeIn">
+        <div class="bg-black p-2 shadow-lg rounded-lg">
+          <div class="mb-4">
+            <span class="text-4xl text-gray-600 fa fa-envelope"></span>
+          </div>
+          <h3 class="text-xl font-semibold text-white mb-2">Email Address</h3>
+          <p><a href="https://mail.google.com/mail/?view=cm&to=shivanishrungare@gmail.com" class="text-blue-600 underline">shivanishrungare7@gmail.com</a></p>
+        </div>
+      </div>
+
+      <div class="w-full md:w-1/2 lg:w-1/4 p-4 text-center animate__animated animate__fadeIn">
+        <div class="bg-black p-2 shadow-lg rounded-lg">
+          <div class="mb-4">
+            <span class="text-4xl text-gray-600 fa fa-download"></span>
+          </div>
+          <h3 class="text-xl font-semibold text-white mb-2">Download CV</h3>
+          <p><a href="resume.pdf" download="Shivani-Shrungare-CV.pdf" target="_blank" class="text-blue-600 underline">CV Link</a></p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="flex justify-center space-x-6 mb-8">
+      <ul class="flex space-x-8 items-center">
+        <li class="text-white text-xl">Find me on :</li>
+        <li><a href="https://www.xing.com/profile/ShivaniSanjay_Shrungare/" target="_blank" class="text-green-600  hover:text-blue-700"><span class="fa fa-xing text-2xl"></span></a></li>
+        <li><a href="https://www.linkedin.com/in/shivani-shrungare/" target="_blank" class="text-white hover:text-blue-500"><span class="fa fa-linkedin text-2xl"></span></a></li>
+        <li><a href="https://github.com/shivanishrungare" target="_blank" class="text-white hover:text-blue-700"><span class="fa fa-github text-2xl"></span></a></li>
+        <li><a href="https://www.instagram.com/shivanishrungare/" target="_blank" class="text-pink-600 hover:text-pink-700"><span class="fa fa-instagram text-2xl"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+</body>
+</html>
